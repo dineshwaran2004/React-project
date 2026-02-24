@@ -1,0 +1,200 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Bitcount+Single:wght@100..900&family=Boldonse&family=Bungee&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Bitcount+Single:wght@100..900&family=Boldonse&family=Bungee&family=Phudu:wght@300..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  overflow-x: hidden;
+}
+
+
+.topBar {
+  position: fixed;
+  top: 20px;
+  left: 40px;
+  z-index: 1000;
+}
+
+.topBar select {
+  padding: 10px 18px;
+  font-size: 15px;
+  border-radius: 8px;
+  border: none;
+  background: #ffffff;
+  color: #b60f0f;
+  cursor: pointer;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+  
+  font-family: "Changa One", sans-serif;
+  font-weight: 400;
+  font-style: italic;
+  
+}
+
+
+.container {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 100px;
+  box-sizing: border-box;
+  position: relative;
+}
+
+
+.imageContainer {
+  width: 400%;
+  height: 300vh;
+  display: flex;
+  margin-left: -50px;
+  justify-content: center;
+}
+
+.carImage {
+  width: 500%;
+  max-width: 1200px;
+  object-fit: contain;
+  border-radius: 12px;
+  box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+  transition: transform 0.3s ease;
+  margin-left: -200px;
+}
+
+.carImage:hover {
+  transform: scale(1.02);
+}
+
+
+.textContainer {
+  width: 35%;
+  padding-right: 60px;
+}
+
+
+
+
+.description {
+  font-size: 18px;
+  line-height: 1.6;
+  color: #333;
+}
+
+
+.verticalNav {
+  position: fixed;
+  right: 60px;
+  top: 50%;
+  transform: translateY(-50%);
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+
+.dot {
+  position: relative;
+  cursor: pointer;
+  font-size: 18px;
+  padding-left: 30px;
+  transition: 0.3s;
+  text-transform: capitalize;
+}
+
+
+.dot::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 6px;
+  width: 14px;
+  height: 14px;
+  background: rgb(0, 0, 0);
+  border-radius: 50%;
+  transition: 0.3s;
+}
+
+
+.dot.active {
+  color: #b60f0f;
+  font-weight: bold;
+    font-family: "Anton", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.dot.active::before {
+  background: #b60f0f;
+  transform: scale(1.2);
+}
+
+
+.dot:hover {
+  color: #b60f0f;
+}
+
+.dot:hover::before {
+  background: #b60f0f;
+}
+
+
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    padding: 20px;
+    justify-content: center;
+  }
+
+  .imageContainer {
+    width: 100%;
+    height: 50vh;
+    margin-bottom: 20px;
+  }
+
+  .textContainer {
+    width: 100%;
+    padding-right: 0;
+    text-align: center;
+  }
+
+  .verticalNav {
+    position: fixed;
+    bottom: 20px;
+    right: auto;
+    left: 50%;
+    top: auto;
+    transform: translateX(-50%);
+    flex-direction: row;
+    gap: 15px;
+  }
+
+  .dot {
+    padding-left: 0;
+    padding-top: 25px;
+  }
+
+  .dot::before {
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
+
+.selectpagetext{
+
+ font-size: 24px;
+  font-weight: bold;
+  color: black;
+  font-family: "Playwrite AT", cursive;
+  font-optical-sizing: auto;
+  font-weight: 1600;
+  font-style: normal;
+  font-size: 40px;
+  background-color: #00000000;
+  
+}
+span{
+
+color: #ff2e63;
+}
