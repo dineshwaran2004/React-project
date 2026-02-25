@@ -85,6 +85,7 @@ npm run dev
 BCA Graduate | React Developer | Aspiring Full Stack Developer  
 
 GitHub: https://github.com/dineshwaran2004  
+LinkedIn: https://www.linkedin.com/in/dineshwaran-d-29b853375/
 
 
 ---
